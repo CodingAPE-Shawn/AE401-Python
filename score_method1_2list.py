@@ -1,28 +1,27 @@
-names=list()
-scores=list()
+names = []
+scores = []
 total=0
 avg=0
 
-# How many people in the class?
+# 詢問班上人數
 n = input('How many people in this class? ')
 n = int(n)
 
-# Input names & scores and establish the score list
+# 利用迴圈和input讓班上同學輸入名字和成績
 for i in range(n):
     name = input('Please input the name: ')
     names.append(name)
-
     score = input('Please input the score: ')
     score = int(score)
     scores.append(score)
     
-# average score
+# 計算平均分數
 for item in scores:
     total = total+item
 
 print("The average is ", (total/n))    
 
-# highest score
+# 計算最高分
 highest=0
 for i in range(n):
     if scores[i] > highest:
@@ -31,7 +30,7 @@ for i in range(n):
         
 print(highestname, 'got the highest score', highest)
 
-# lowest score
+# 計算最低分
 lowest = 100
 for i in range(n):
     if scores[i] < lowest:
