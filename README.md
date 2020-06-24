@@ -1,6 +1,4 @@
-# AE401-Python
-
-## 上傳檔案方式
+# 上傳檔案方式
 ### 1.點擊「add file」當中的「upload file」
 
 ![image](https://i.imgur.com/EJYW0K4.png)
