@@ -1,8 +1,8 @@
-names=list()
-scores=list()
+names=[]
+scores=[]
 avg=0
 
-# function: average
+# 計算平均值的函式
 def average(scores):
     total = 0
     n = len(scores)
@@ -12,7 +12,7 @@ def average(scores):
     average = total/n
     return average
 
-# function highestscore
+# 計算最高分的函式
 def highestscore(scores):
     highest=0
     n = len(scores)
@@ -25,7 +25,7 @@ def highestscore(scores):
     person.append(highest)
     return person
         
-# lowest score
+# 計算最低分的函式
 def lowestscore(scores):
     lowest = 100
     n = len(scores)
@@ -38,12 +38,12 @@ def lowestscore(scores):
     person.append(lowest)
     return person
 
-# main function
-# How many people in the class?
+# 主程式
+# 詢問班上人數
 n = input('How many people in this class? ')
 n = int(n)
 
-# Input names & scores and establish the score list
+# 利用迴圈和input讓班上同學輸入名字和成績
 for i in range(n):
     name = input('Please input the name: ')
     names.append(name)
@@ -51,10 +51,11 @@ for i in range(n):
     score = input('Please input the score: ')
     score = int(score)
     scores.append(score)
-
-    ave = average(scores)
-    high = highestscore(scores)
-    low = lowestscore(scores)
+    
+#使用前面定義的函式直接找出最高、最低、平均
+ave = average(scores)
+high = highestscore(scores)
+low = lowestscore(scores)
     
 print("The average is", ave)    
 print(high[0], 'got the highest score', high[1])
