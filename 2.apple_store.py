@@ -48,3 +48,4 @@ while True:
     else:
         print('wrong input')
 
+print(123)
