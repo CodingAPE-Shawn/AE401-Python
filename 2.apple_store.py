@@ -47,5 +47,3 @@ while True:
         break
     else:
         print('wrong input')
-
-print(123)
